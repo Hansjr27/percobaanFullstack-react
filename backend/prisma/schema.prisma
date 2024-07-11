@@ -22,7 +22,7 @@ model Product {
   updatedAt DateTime @updatedAt
 }
 
-model User {
+model Users {
   id Int @id @default(autoincrement())
   uuid String @unique @default(uuid())
   name String

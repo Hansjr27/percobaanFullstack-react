@@ -1,4 +1,3 @@
-import { error } from "winston";
 import prisma from "../utils/client.js";
 import {
   generateAcessToken,
@@ -47,7 +46,7 @@ export const getAcessToken = async (req, res, next) => {
     });
     if (!user) {
       return res.status(404).json({
-        error: "data not found",
+        error: "user not found",
         message: "failed",
         data: null,
       });
@@ -72,7 +71,7 @@ export const getAcessToken = async (req, res, next) => {
   }
 };
 
-export const generateRefreshToken = async (req, res, next) => {
+export const generateNewRefreshToken = async (req, res, next) => {
   try {
     const authHeader = req.headers["authorization"];
     const token = authHeader && authHeader.split(" ")[1];

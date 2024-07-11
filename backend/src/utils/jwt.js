@@ -28,3 +28,7 @@ export const verifyAccessToken = (token) => {
     return false;
   }
 };
+
+export const parseJWT = (token) => {
+  return JSON.parse(Buffer.from(token.split(".")[1], "base64").toString());
+};

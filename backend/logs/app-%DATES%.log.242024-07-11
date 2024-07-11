@@ -108,3 +108,36 @@ Invalid `prisma.product.update()` invocation:
 }
 
 Unknown argument `price`. Did you mean `Price`? Available options are marked with ?.
+ [LOGGER] 2024-07-11 21:21:13.843 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 21:22:03.062 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 21:22:04.575 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 21:22:07.078 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:05:04.448 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:06:12.814 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:31.770 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:33.402 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:34.151 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:35.112 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:35.266 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:35.445 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:35.598 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:35.738 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:07:35.956 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:08:51.820 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:11:24.454 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:15:38.387 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:15:46.622 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:16:19.820 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:18:31.290 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:22:07.655 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:24:15.430 PM error : Error in src/controllers/user.controller.js:create -inputUserValidation.validate is not a function
+ [LOGGER] 2024-07-11 22:27:58.051 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:29:00.889 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:30:52.950 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:36:48.757 PM error : Error in src/controllers/user.controller.js:create -Joi is not defined
+ [LOGGER] 2024-07-11 22:38:46.979 PM error : Error in src/controllers/user.controller.js:create -Joi.validate is not a function
+ [LOGGER] 2024-07-11 22:39:18.683 PM error : Error in src/controllers/user.controller.js:create -Joi.validate is not a function
+ [LOGGER] 2024-07-11 22:40:09.270 PM error : Error in src/controllers/user.controller.js:create -Joi.validate is not a function
+ [LOGGER] 2024-07-11 22:42:50.910 PM error : Error in src/controllers/user.controller.js:create -inputUserValidation.validate is not a function
+ [LOGGER] 2024-07-11 22:45:41.123 PM error : Error in src/controllers/user.controller.js:create -inputUserValidation.validate is not a function
+ [LOGGER] 2024-07-11 22:51:25.232 PM error : Error in src/controllers/user.controller.js:create -Joi.validate is not a function
