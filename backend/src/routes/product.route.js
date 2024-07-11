@@ -6,13 +6,14 @@ import {
   getProductById,
   updateProduct,
 } from "../controllers/product.controller.js";
+import { autenticate } from "../controllers/error.controller.js";
 
 const productRouter = Router();
 
-productRouter.get("/products", getAllProduct);
-productRouter.get("/products/:id", getProductById);
-productRouter.post("/products", createProduct);
-productRouter.put("/products/:id", updateProduct);
-productRouter.delete("/products/:id", deleteProduct);
+productRouter.get("/products", autenticate, getAllProduct);
+productRouter.get("/products/:id", autenticate, getProductById);
+productRouter.post("/products", autenticate, createProduct);
+productRouter.put("/products/:id", autenticate, updateProduct);
+productRouter.delete("/products/:id", autenticate, deleteProduct);
 
 export default productRouter;

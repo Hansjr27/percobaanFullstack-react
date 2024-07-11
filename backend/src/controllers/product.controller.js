@@ -1,5 +1,5 @@
 import prisma from "../utils/client.js";
-import { inputProductValidaton } from "../validations/product.validation.js";
+import { inputProductValidation } from "../validations/product.validation.js";
 
 export const getAllProduct = async (req, res, next) => {
   try {
@@ -58,9 +58,9 @@ export const getProductById = async (req, res, next) => {
 
 export const createProduct = async (req, res, next) => {
   try {
-    const { error, value } = inputProductValidaton(req.body);
+    const { error, value } = inputProductValidation(req.body);
     if (error) {
-      return req.status(400).json({
+      return res.status(400).json({
         error: error.details[0].message,
         message: "field",
         data: null,
@@ -68,7 +68,9 @@ export const createProduct = async (req, res, next) => {
     }
     const data = await prisma.product.create({
       data: {
-        ...value,
+        name: value.name,
+        qty: value.qty,
+        Price: value.price,
       },
     });
     res.status(200).json({
@@ -89,7 +91,7 @@ export const createProduct = async (req, res, next) => {
 export const updateProduct = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { error, value } = inputProductValidaton(req.body);
+    const { error, value } = inputProductValidation(req.body);
     if (error) {
       return res.status(400).json({
         error: error.details[0].message,
@@ -102,7 +104,9 @@ export const updateProduct = async (req, res, next) => {
         id: Number(id),
       },
       data: {
-        ...value,
+        name: value.name,
+        qty: value.qty,
+        Price: value.price, // Gunakan Price sesuai dengan yang didefinisikan dalam skema Prisma
       },
     });
     res.status(200).json({

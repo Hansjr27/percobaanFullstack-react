@@ -1,0 +1,110 @@
+ [LOGGER] 2024-07-11 08:47:28.127 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 08:52:10.375 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 08:52:55.387 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 08:52:57.305 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 08:55:53.065 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 08:56:04.765 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 09:48:57.907 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 09:49:22.616 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 09:52:25.192 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 09:55:02.252 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 09:58:37.840 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 10:00:24.388 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 10:07:35.118 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputValidation' as it is undefined.
+ [LOGGER] 2024-07-11 10:08:45.625 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot read properties of undefined (reading 'error')
+ [LOGGER] 2024-07-11 10:12:01.500 AM error : Error in src/controllers/product.controller.js: createProduct - Cannot destructure property 'error' of 'inputProductValidaton(...)' as it is undefined.
+ [LOGGER] 2024-07-11 10:26:25.563 AM error : Error in src/controllers/product.controller.js: createProduct - 
+Invalid `prisma.product.create()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-11 10:27:07.700 AM error : Error in src/controllers/product.controller.js: createProduct - 
+Invalid `prisma.product.create()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-11 10:27:46.139 AM error : Error in src/controllers/product.controller.js: createProduct - 
+Invalid `prisma.product.create()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-11 10:28:24.606 AM error : Error in src/controllers/product.controller.js: createProduct - 
+Invalid `prisma.product.create()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-11 10:29:03.016 AM error : Error in src/controllers/product.controller.js: createProduct - 
+Invalid `prisma.product.create()` invocation:
+
+{
+  data: {
+    name: "Sepatu",
+    qty: 0,
+    price: 10000,
++   Price: Decimal
+  }
+}
+
+Argument `Price` is missing.
+ [LOGGER] 2024-07-11 10:31:43.746 AM error : Error in src/controllers/product.controller.js: createProduct - 
+Invalid `prisma.product.create()` invocation:
+
+{
+  data: {
+    name: "Sepatu",
+    qty: 0,
+    price: 10000,
+    ~~~~~
+    Price: 10000,
+?   createdAt?: DateTime,
+?   updatedAt?: DateTime
+  }
+}
+
+Unknown argument `price`. Did you mean `Price`? Available options are marked with ?.
+ [LOGGER] 2024-07-11 10:36:56.325 AM error : Error in src/controllers/product.controller.js: updateProduct - 
+Invalid `prisma.product.update()` invocation:
+
+{
+  where: {
+    id: 1
+  },
+  data: {
+    name: "Sepatu",
+    qty: 0,
+    price: 10000,
+    ~~~~~
+?   Price?: Decimal | DecimalFieldUpdateOperationsInput,
+?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput
+  }
+}
+
+Unknown argument `price`. Did you mean `Price`? Available options are marked with ?.
+ [LOGGER] 2024-07-11 10:37:37.329 AM error : Error in src/controllers/product.controller.js: updateProduct - 
+Invalid `prisma.product.update()` invocation:
+
+{
+  where: {
+    id: 1
+  },
+  data: {
+    name: "Sepatu",
+    qty: 0,
+    price: 10000,
+    ~~~~~
+?   Price?: Decimal | DecimalFieldUpdateOperationsInput,
+?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput
+  }
+}
+
+Unknown argument `price`. Did you mean `Price`? Available options are marked with ?.

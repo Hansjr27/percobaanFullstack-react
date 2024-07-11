@@ -1,4 +1,5 @@
 import express from "express";
+import "../utils/winston.js";
 import cors from "cors";
 import appRoutes from "../routes/index.js";
 
