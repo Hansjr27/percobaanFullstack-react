@@ -17,12 +17,7 @@ export const getAllProduct = async (req, res, next) => {
       data,
     });
   } catch (error) {
-    next(
-      new Error(
-        "Error in src/controllers/product.controller.js: getAllProduct - " +
-          error.message
-      )
-    );
+    next(error);
   }
 };
 
@@ -47,12 +42,7 @@ export const getProductById = async (req, res, next) => {
       data,
     });
   } catch (error) {
-    next(
-      new Error(
-        "Error in src/controllers/product.controller.js: getProductById - " +
-          error.message
-      )
-    );
+    next(error);
   }
 };
 
@@ -79,12 +69,7 @@ export const createProduct = async (req, res, next) => {
       data,
     });
   } catch (error) {
-    next(
-      new Error(
-        "Error in src/controllers/product.controller.js: createProduct - " +
-          error.message
-      )
-    );
+    next(error);
   }
 };
 
@@ -115,12 +100,7 @@ export const updateProduct = async (req, res, next) => {
       data,
     });
   } catch (error) {
-    next(
-      new Error(
-        "Error in src/controllers/product.controller.js: updateProduct - " +
-          error.message
-      )
-    );
+    next(error);
   }
 };
 
@@ -138,11 +118,6 @@ export const deleteProduct = async (req, res, next) => {
       data,
     });
   } catch (error) {
-    next(
-      new Error(
-        "Error in src/controllers/product.controller.js: deleteProduct - " +
-          error.message
-      )
-    );
+    next(error);
   }
 };

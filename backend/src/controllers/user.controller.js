@@ -51,13 +51,12 @@ export const getAcessToken = async (req, res, next) => {
         data: null,
       });
     }
-    // generate acess token
-    user.uuid = "XXXXXXXXXXXXXXXX";
     const acessToken = generateAcessToken(user);
     const refreshToken = generateRefreshToken(user);
     return res.status(200).json({
       error: null,
       message: "succses",
+      data: user,
       acessToken,
       refreshToken,
     });
@@ -90,7 +89,7 @@ export const generateNewRefreshToken = async (req, res, next) => {
         data: null,
       });
     }
-    let data = parseJWT(token);
+    const data = parseJWT(token);
     const user = await prisma.user.findUnique({
       where: {
         id: data.id,
@@ -103,7 +102,6 @@ export const generateNewRefreshToken = async (req, res, next) => {
         data: null,
       });
     }
-    user.uuid = "XXXXXXXXXXXXXXXX";
     const acessToken = generateAcessToken(user);
     const refreshToken = generateRefreshToken(user);
     return res.status(200).json({

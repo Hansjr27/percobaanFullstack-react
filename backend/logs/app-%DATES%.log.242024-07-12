@@ -1,0 +1,96 @@
+ [LOGGER] 2024-07-12 10:04:46.194 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:09:08.860 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:18:53.422 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:23:31.145 AM error : Error in src/controllers/user.controller.js:delete -
+Invalid `prisma.user.delete()` invocation:
+
+{
+  data: {
+  ~~~~
+    name: "syehan",
+    address: "Banjar"
+  },
+? where?: UserWhereUniqueInput
+}
+
+Unknown argument `data`. Available options are marked with ?.
+ [LOGGER] 2024-07-12 10:25:17.283 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:37:56.929 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:39:40.270 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:42:10.480 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:45:03.115 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 10:46:58.542 AM error : Error in src/controllers/user.controller.js:getAcessToken -secretOrPrivateKey must have a value
+ [LOGGER] 2024-07-12 13:22:07.721 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:22:15.154 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:23:14.033 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:22.315 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:24.702 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:24.874 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:25.158 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:25.289 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:25.440 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:25.624 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:25.745 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:25.927 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:26.101 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:26.233 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:26.383 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:26.587 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:26.828 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:27.010 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:27.207 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:27.397 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:27.525 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:27.689 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:27.892 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:28.053 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:28.208 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:28.360 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:28.555 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:28.701 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:28.841 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:29.052 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:29.202 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:29.564 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:29.713 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:29.871 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:30.091 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:29:30.326 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:31:00.306 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:33:32.739 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:35:20.628 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:39:15.738 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:39:17.018 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:39:24.963 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:41:38.791 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:44:28.961 PM error : re is not defined
+ [LOGGER] 2024-07-12 13:45:54.045 PM error : re is not defined
+ [LOGGER] 2024-07-12 14:16:28.180 PM error : re is not defined
+ [LOGGER] 2024-07-12 14:17:53.352 PM error : re is not defined
+ [LOGGER] 2024-07-12 14:19:57.624 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-12 14:21:08.244 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-12 14:25:14.440 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:25:35.363 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:26:50.982 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:28:43.644 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:28:52.504 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:29:06.434 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:30:38.761 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:31:36.529 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:35:48.225 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:37:17.778 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:37:28.512 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:40:46.496 PM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-12 14:46:05.203 PM error : Expected "payload" to be a plain object.

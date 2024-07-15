@@ -45,6 +45,6 @@ export const autenticate = (req, res, next) => {
       data: null,
     });
   }
-  re.user = user;
+  req.user = user;
   next();
 };
