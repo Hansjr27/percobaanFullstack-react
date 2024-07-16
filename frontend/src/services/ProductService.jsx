@@ -44,11 +44,10 @@ export const inputProduct = async (data) => {
 };
 
 export const updateProduct = async (id, data) => {
-  console.log(data)
   try {
     const response = await axios.put(`/api/products/${id}`, data, {
       headers: {
-        Authorization: `Bearer ${accessToken}`,
+        Authorization: `Bearer ${secureLocalStorage.getItem("acessToken")}`,
       },
     });
     return response.data;

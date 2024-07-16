@@ -361,3 +361,22 @@ Invalid `prisma.product.update()` invocation:
 
 
 An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ [LOGGER] 2024-07-16 23:10:35.915 PM error : 
+Invalid `prisma.product.update()` invocation:
+
+{
+  where: {
+    id: 23
+  },
+  data: {
+    name: "tas murah",
+    qty: 20,
+    price: 100,
+    ~~~~~
+?   Price?: Decimal | DecimalFieldUpdateOperationsInput,
+?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput
+  }
+}
+
+Unknown argument `price`. Did you mean `Price`? Available options are marked with ?.

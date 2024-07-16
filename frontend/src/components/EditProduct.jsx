@@ -6,13 +6,13 @@ import { getProductById, updateProduct } from "../services/ProductService";
 const EditProduct = () => {
   const [name, setName] = useState("");
   const [qty, setQty] = useState("");
-  const [price, setPrice] = useState("");
+  const [Price, setPrice] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
 
   const editProduct = async (e) => {
     e.preventDefault();
-    const product = { name, qty, price };
+    const product = { name, qty, Price };
     try {
       const data = await updateProduct(id, product);
       if (data) {
@@ -49,7 +49,7 @@ const EditProduct = () => {
         if (data) {
           setName(data.name || "");
           setQty(data.qty || "");
-          setPrice(data.price || "");
+          setPrice(data.Price || "");
         }
       } catch (error) {
         Swal.fire({
@@ -94,7 +94,7 @@ const EditProduct = () => {
             <input
               type="number"
               name="price"
-              value={price}
+              value={Price}
               onChange={(e) => setPrice(e.target.value)}
               className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow"
             />
