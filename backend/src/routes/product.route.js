@@ -10,7 +10,7 @@ import { autenticate } from "../controllers/error.controller.js";
 
 const productRouter = Router();
 
-productRouter.get("/products", autenticate, getAllProduct);
+productRouter.get("/products", getAllProduct);
 productRouter.get("/products/:id", autenticate, getProductById);
 productRouter.post("/products", autenticate, createProduct);
 productRouter.put("/products/:id", autenticate, updateProduct);

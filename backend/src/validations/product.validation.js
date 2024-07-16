@@ -6,5 +6,6 @@ export const inputProductValidation = (payload) => {
     qty: Joi.number().required(),
     price: Joi.number().required(),
   });
-  return schema.validate(payload);
+  const { error, value } = schema.validate(payload);
+  return error ? { error } : { value };
 };

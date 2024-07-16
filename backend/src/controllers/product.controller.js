@@ -24,27 +24,40 @@ export const getAllProduct = async (req, res, next) => {
 export const getProductById = async (req, res, next) => {
   try {
     const { id } = req.params;
+    
+    // Validasi ID
+    if (isNaN(id)) {
+      return res.status(400).json({
+        error: "Invalid ID format",
+        message: "The provided ID is not a number",
+        data: null,
+      });
+    }
+
     const data = await prisma.product.findUnique({
       where: {
         id: Number(id),
       },
     });
+
     if (!data) {
       return res.status(404).json({
-        error: "data not found",
-        message: "field",
+        error: "Data not found",
+        message: "The product with the specified ID does not exist",
         data: null,
       });
     }
+
     res.status(200).json({
       error: null,
-      message: "success",
+      message: "Success",
       data,
     });
   } catch (error) {
     next(error);
   }
 };
+
 
 export const createProduct = async (req, res, next) => {
   try {
