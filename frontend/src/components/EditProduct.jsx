@@ -24,9 +24,19 @@ const EditProduct = () => {
         navigate("/");
       }
     } catch (error) {
+      let errorMessage = "An error occurred";
+      if (
+        error.response &&
+        error.response.data &&
+        error.response.data.message
+      ) {
+        errorMessage = error.response.data.message;
+      } else if (error.message) {
+        errorMessage = error.message;
+      }
       Swal.fire({
         title: "Error",
-        text: error.message,
+        text: errorMessage,
         icon: "error",
       });
     }
@@ -34,11 +44,19 @@ const EditProduct = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const data = await getProductById(id);
-      if (data) {
-        setName(data.name);
-        setQty(data.qty);
-        setPrice(data.price);
+      try {
+        const data = await getProductById(id);
+        if (data) {
+          setName(data.name || "");
+          setQty(data.qty || "");
+          setPrice(data.price || "");
+        }
+      } catch (error) {
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch product data",
+          icon: "error",
+        });
       }
     };
     fetchProduct();
@@ -56,7 +74,6 @@ const EditProduct = () => {
             <input
               type="text"
               name="productName"
-              placeholder="Enter product name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow"
@@ -67,7 +84,6 @@ const EditProduct = () => {
             <input
               type="number"
               name="quantity"
-              placeholder="Enter quantity"
               value={qty}
               onChange={(e) => setQty(e.target.value)}
               className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow"
@@ -78,7 +94,6 @@ const EditProduct = () => {
             <input
               type="number"
               name="price"
-              placeholder="Enter price"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
               className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow"

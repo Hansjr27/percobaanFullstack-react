@@ -1,2 +1,363 @@
  [LOGGER] 2024-07-16 08:15:40.979 AM error : Expected "payload" to be a plain object.
  [LOGGER] 2024-07-16 08:19:24.678 AM error : Expected "payload" to be a plain object.
+ [LOGGER] 2024-07-16 09:54:02.905 AM error : 
+Invalid `prisma.product.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ [LOGGER] 2024-07-16 10:14:48.245 AM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 10:36:46.398 AM error : 
+Invalid `prisma.product.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ [LOGGER] 2024-07-16 10:36:47.908 AM error : 
+Invalid `prisma.product.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ [LOGGER] 2024-07-16 10:36:48.068 AM error : 
+Invalid `prisma.product.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ [LOGGER] 2024-07-16 10:36:48.276 AM error : 
+Invalid `prisma.product.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ [LOGGER] 2024-07-16 10:52:02.055 AM error : Joi.number(...).trim is not a function
+ [LOGGER] 2024-07-16 12:09:38.233 PM error : Joi.number(...).trim is not a function
+ [LOGGER] 2024-07-16 12:38:51.119 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 13:59:22.248 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 13:59:22.321 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 13:59:26.525 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 13:59:30.909 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 13:59:34.994 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 13:59:36.502 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:00:01.553 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:00:13.883 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:00:29.603 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:01:28.326 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:02:05.251 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:33:17.577 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:33:17.629 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:33:21.739 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:33:25.878 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:33:29.961 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:01.644 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:01.692 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:05.698 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:09.786 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:13.884 PM error : Error in src/controllers/user.controller.js:getAcessToken -
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:15.796 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:45:44.893 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:46:13.989 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:47:43.883 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:55:34.058 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:55:43.312 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:56:12.402 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:57:11.529 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:57:40.000 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 14:58:36.487 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:01:45.090 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:02:00.604 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:02:21.904 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:02:47.343 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:03:23.171 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:03:37.575 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:04:02.080 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:04:46.866 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:05:01.270 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:06:21.519 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:06:50.331 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:09:34.569 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:12:45.608 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 15:13:01.649 PM error : 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`.
+ [LOGGER] 2024-07-16 21:29:23.858 PM error : 
+Invalid `prisma.product.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.

@@ -25,11 +25,30 @@ export const deleteProduct = async (id) => {
 };
 
 export const inputProduct = async (data) => {
-  console.log('Sending data:', data); // Tambahkan log ini
   try {
-    const response = await axios.post("/api/products", data, {  
+    const response = await axios.post("/api/products", data, {
       headers: {
-        Authorization: `Bearer ${secureLocalStorage.getItem("accessToken")}`,
+        Authorization: `Bearer ${secureLocalStorage.getItem("acessToken")}`,
+      },
+    });
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    if (error.request && error.request.response) {
+      const errorData = JSON.parse(error.request.response);
+      throw new Error(errorData.error || error.message);
+    } else {
+      throw new Error(error.message);
+    }
+  }
+};
+
+export const updateProduct = async (id, data) => {
+  console.log(data)
+  try {
+    const response = await axios.put(`/api/products/${id}`, data, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
       },
     });
     return response.data;
@@ -37,21 +56,6 @@ export const inputProduct = async (data) => {
     const errorData = JSON.parse(error.request.response);
     throw new Error(errorData.error ? errorData.error : error.message);
   }
-};
-
-
-export const updateProduct = async (id, data) => {
-  try {
-    const response = await axios.put(`/api/products${id}`, data, {
-      headers: {
-        Authorization: `Bearer ${secureLocalStorage.getItem("acessToken")}`,
-      },
-    });
-    return response.data;
-  } catch (error) {
-    const errorData = JSON.parse(error.request.response);
-    throw new Error(errorData.error ? errorData.error : error.message);
-  } 
 };
 
 export const getProductById = async (id) => {

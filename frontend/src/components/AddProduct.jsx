@@ -62,7 +62,7 @@ const AddProduct = () => {
           <div className="mb-5">
             <label className="font-bold text-slate-800">Price</label>
             <input
-              type="number"
+              type="text"
               name="price"
               placeholder="Enter price"
               value={price}

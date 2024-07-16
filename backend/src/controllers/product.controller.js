@@ -24,7 +24,7 @@ export const getAllProduct = async (req, res, next) => {
 export const getProductById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    
+
     // Validasi ID
     if (isNaN(id)) {
       return res.status(400).json({
@@ -58,7 +58,6 @@ export const getProductById = async (req, res, next) => {
   }
 };
 
-
 export const createProduct = async (req, res, next) => {
   try {
     const { error, value } = inputProductValidation(req.body);
@@ -90,27 +89,45 @@ export const updateProduct = async (req, res, next) => {
   try {
     const { id } = req.params;
     const { error, value } = inputProductValidation(req.body);
+
     if (error) {
       return res.status(400).json({
         error: error.details[0].message,
-        message: "field",
+        message: "Invalid input data",
         data: null,
       });
     }
-    const data = await prisma.product.update({
+
+    // Cek apakah produk dengan ID yang diberikan ada dalam database
+    const existingProduct = await prisma.product.findUnique({
+      where: {
+        id: Number(id),
+      },
+    });
+
+    if (!existingProduct) {
+      return res.status(404).json({
+        error: "Product not found",
+        message: "Product with the given ID does not exist",
+        data: null,
+      });
+    }
+
+    const updatedProduct = await prisma.product.update({
       where: {
         id: Number(id),
       },
       data: {
         name: value.name,
         qty: value.qty,
-        Price: value.price, // Gunakan Price sesuai dengan yang didefinisikan dalam skema Prisma
+        Price: value.price, // Pastikan Price sesuai dengan yang didefinisikan dalam skema Prisma
       },
     });
+
     res.status(200).json({
       error: null,
-      message: "success",
-      data,
+      message: "Product updated successfully",
+      data: updatedProduct,
     });
   } catch (error) {
     next(error);
